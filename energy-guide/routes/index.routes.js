@@ -184,7 +184,7 @@ router.get("/sendmail", async (req, res) => {
           to: 'energyguideforecast@gmail.com',
           cc: hertzArray,
           subject: 'Hello Energy SAVER - 50Hertz',
-          text: "blabla",
+          text: "",
           html: `<p>🙋🏻‍♀️  &mdash; This is a <b>report</b> on optimal energy consumption for 50Hertz. ${Hertz.data.forecast_result}</p>`,
           // ... other options
         },
@@ -192,7 +192,7 @@ router.get("/sendmail", async (req, res) => {
           to: 'energyguideforecast@gmail.com',
           cc: tennetArray,
           subject: 'Hello Energy SAVER - TenneT',
-          text: "blabla",
+          text: "",
           html: `<p>🙋🏻‍♀️  &mdash; This is a <b>report</b> on optimal energy consumption for TenneT.${TenneT.data.forecast_result}</p>`,
           // ... other options
         },
@@ -200,7 +200,7 @@ router.get("/sendmail", async (req, res) => {
           to: 'energyguideforecast@gmail.com',
           cc: transnetArray,
           subject: 'Hello Energy SAVER - TenneT',
-          text: "blabla",
+          text: "",
           html: `<p>🙋🏻‍♀️  &mdash; This is a <b>report</b> on optimal energy consumption for TransnetBW.${TransnetBW.data.forecast_result}</p>`,
           // ... other options
         },
@@ -208,7 +208,7 @@ router.get("/sendmail", async (req, res) => {
           to: 'energyguideforecast@gmail.com',
           cc: amprionArray,
           subject: 'Hello Energy SAVER - TenneT',
-          text: "blabla",
+          text: "",
           html: `<p>🙋🏻‍♀️  &mdash; This is a <b>report</b> on optimal energy consumption for Amprion.${Amprion.data.forecast_result}</p>`,
           // ... other options
         }
