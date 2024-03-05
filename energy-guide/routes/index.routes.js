@@ -135,7 +135,7 @@ router.get("/sendmail", async (req, res) => {
           console.log('New Access Token:', accessToken);
       
           // Call your function to send an email using the new access token
-          await sendEmail(accessToken, "schwarz.duscheleit@hotmail.de", "Data Update", "Your super interesting message");
+          await sendEmail(accessToken, "", "Data Update", "Your super interesting message");
         } catch (error) {
           console.error('Error refreshing access token:', error.message);
         }
@@ -155,7 +155,7 @@ router.get("/sendmail", async (req, res) => {
 
       const subscribers  = await Subscription.find();
       console.log(Hertz)
-      //await sendEmail("schwarz.duscheleit@hotmail.de", "test", "Data")
+      //await sendEmail("", "test", "Data")
       let hertzArray = [];
       let tennetArray = [];
       let transnetArray = [];
@@ -214,7 +214,7 @@ router.get("/sendmail", async (req, res) => {
         }
       ]
       //  const options = {
-      //   to: 'margaritatikis@gmail.com',
+      //   to: '',
       //   cc: '',
       //   replyTo: '',
       //   subject: 'Hello Energy SAVER',
